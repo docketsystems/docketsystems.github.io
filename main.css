@@ -4,44 +4,60 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+@media only screen and (min-width: 512px) {
+    body {
+        background: url('bg.jpg') no-repeat top center fixed;
+        background-size: cover;
+        padding: 100px 0;
+    }
+}
+
+html {
+    font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+  }
+
 body {
-    line-height: 1.4;
+    line-height: 1.43;
     background-color: black;
-    background: url('bg.jpg') no-repeat top center fixed;
-    background-size: cover;
-    padding: 100px 200px;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: -0.15px;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 6.4rem;
     letter-spacing: -1.4px;
-    margin: 0;
     line-height: 1.2;
 }
 
 h2 {
-    margin: 0;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     padding: 15px 0;
 }
 
 h4 {
-    margin: 0;
     font-weight: 450;
 }
 
-.hero_text {
-    width: 700px;
-
+.content {
+    max-width: 700px;
+    grid-row: 2;
+    justify-items: center;
 }
 
 nav {
     padding: 0;
-    padding-top: 32px;
+    padding: 32px 0;
     margin: 0;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 500;
 }
 
@@ -58,22 +74,19 @@ nav {
     background-color: rgb(10, 77, 153);
 }
 
-.nav_button_get {
-}
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     padding: 0;
     margin: 0;
+    display: inline;
 }
 
 nav img {
@@ -87,20 +100,17 @@ nav a:link, nav a:visited {
 }
 
 main {
+    min-width: 512px;
     background-color: black;
     border-radius: 24px;
-    display: grid;
     color: white;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 80%;
+    font-size: 1.6rem;
+    padding-top: 16px;
+    padding-bottom: 48px;
 }
 
-.main_text {
-    grid-row: 2;
-    justify-items: center;
-    padding-top: 32px;
-    padding-bottom: 64px;
+.main_internal {
+    padding: 0 8vw;
 }
 
 .main_text a:link, .main_text a:visited {
