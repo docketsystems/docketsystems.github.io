@@ -14,11 +14,25 @@ html { font-family: 'Inter', sans-serif; }
     main {
         width: 100%;
     }
+
+    .hero_text {
+        font-size: 6.4rem;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    .hero_text {
+        font-size: 5.6rem;
+    }
+
+    .nav_button {
+        display: none;
+    }
 }
 
 html {
     font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
-  }
+}
 
 body {
     line-height: 1.43;
@@ -110,7 +124,7 @@ main {
     color: white;
     font-size: 1.6rem;
     padding-top: 8px;
-    padding-bottom: 32px;
+    padding-bottom: 48px;
     max-width: 960px
 }
 
