@@ -1,0 +1,73 @@
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@media only screen and (min-width: 512px) {
+    body {
+        padding: 16vh 0;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    body {
+        padding: 8vh 0;
+    }
+}
+
+html {
+    font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
+body {
+    line-height: 1.43;
+    background-color: black;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    letter-spacing: -0.15px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6.4rem;
+    letter-spacing: -1.4px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-weight: 450;
+    font-size: 1.6rem;
+}
+
+.logo { 
+    height: 64px;
+    padding-bottom: 16px;
+}
+
+main {
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.main_text a:link, .main_text a:visited {
+    color: white;
+}
+
+.main_text a {
+    transition: 0.3s;
+}
+
+.main_text p {
+    padding-top: 4px;
+}
+
+.main_text a:hover {
+    color: rgb(190, 190, 190);
+}
